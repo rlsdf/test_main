@@ -1,10 +1,12 @@
 {
-  "name": "test_main",
-  "version": "1.0.0",
+  "name": "nariku_test_main",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "/dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/rlsdf/test_main/issues"
   },
-  "homepage": "https://github.com/rlsdf/test_main#readme"
+  "homepage": "https://github.com/rlsdf/test_main#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  }
 }
